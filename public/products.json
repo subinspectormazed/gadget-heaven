@@ -1,0 +1,175 @@
+[
+  {
+    "product_id": "G001",
+    "product_title": "Wireless Noise-Canceling Headphones",
+    "product_image": "https://i.ibb.co.com/b6Q0Tk0/Sony-WH-CH720-N-Black-Up-6290.jpg",
+    "category": "Audio",
+    "price": 199.99,
+    "description": "Premium wireless headphones with active noise cancellation.",
+    "Specification": [
+      "Bluetooth 5.0",
+      "20-hour battery life",
+      "Touch controls"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "G002",
+    "product_title": "Premium Bluetooth Speaker",
+    "product_image": "https://i5.walmartimages.com/seo/JBL-Portable-Bluetooth-Speaker-with-Waterproof-Blue-CHARGE4BLU_4e4b6806-dd04-4278-82df-4e726facc3ea_1.8fdfbef9493e8f727490f51f43ceeb07.jpeg",
+    "category": "Audio",
+    "price": 79.99,
+    "description": "Compact and portable speaker with deep bass.",
+    "Specification": ["12-hour battery life", "Waterproof", "Bluetooth 5.1"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "G003",
+    "product_title": "Noise-Canceling Earbuds",
+    "product_image": "https://i.ibb.co.com/GTJ0zq4/p-BXWTUPj-M5ny-VFGCJs-LSl-Yu-Q0-TZM0s1h-CTe-Auw-Ew.jpg",
+    "category": "Audio",
+    "price": 129.99,
+    "description": "True wireless earbuds with ANC and touch controls.",
+    "Specification": ["Bluetooth 5.2", "10-hour playback", "Fast charging"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "G004",
+    "product_title": "4K Ultra HD Smart TV",
+    "product_image": "https://sonysmart.com.bd/public/uploads/all/xMrc3otuhBc3nyTNoRCcXSrYQJFzPmnIoJjO08h1.jpg",
+    "category": "Accessories",
+    "price": 899.99,
+    "description": "Large 55-inch 4K UHD TV with smart features.",
+    "Specification": ["HDR10+", "Built-in apps", "Dolby Vision"],
+    "availability": false,
+    "rating": 4.4
+  },
+  {
+    "product_id": "G005",
+    "product_title": "Gaming Laptop X10",
+    "product_image": "https://www.tradeinn.com/f/13974/139740851/medion-erazer-major-x10-16-i7-12700h-16gb-1tb-ssd-arc-a730m-gaming-laptop.webp",
+    "category": "Computers",
+    "price": 1499.99,
+    "description": "High-performance gaming laptop with advanced cooling.",
+    "Specification": ["Intel i7", "16GB RAM", "RTX 3060 GPU"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "G016",
+    "product_title": "Ultrabook Pro 15",
+    "product_image": "https://dlcdnwebimgs.asus.com/gain/7314a203-99d6-4e68-bb5e-c8e6f844b29e/w800",
+    "category": "Computers",
+    "price": 1299.99,
+    "description": "Slim and lightweight laptop for professionals.",
+    "Specification": ["Intel i5", "512GB SSD", "Touchscreen"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "G017",
+    "product_title": "Business Laptop Elite",
+    "product_image": "https://www.notebookcheck.net/fileadmin/_processed_/b/c/csm_HP_EliteBook_845_G7_Front_Right_cc3e042585.jpg",
+    "category": "Computers",
+    "price": 1099.99,
+    "description": "Efficient laptop for office and business tasks.",
+    "Specification": ["AMD Ryzen 7", "16GB RAM", "1TB SSD"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "G018",
+    "product_title": "Convertible 2-in-1 Laptop",
+    "product_image": "https://i5.walmartimages.com/seo/HP-ENVY-x360-2-in-1-Convertible-15-6-FHD-Touch-Laptop-Intel-Core-i5-1335U-8GB-RAM-512GB-SSD-Mineral-Silver-Windows-11-Home-15-ew1058wm_2e42795d-e57a-485e-9cf0-cde4cbbe70f8.7bde8b618fbd0fddbac5c409b0bbc105.jpeg",
+    "category": "Computers",
+    "price": 899.99,
+    "description": "Versatile 2-in-1 laptop with a detachable keyboard.",
+    "Specification": ["Intel i3", "256GB SSD", "Full HD Display"],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_id": "G019",
+    "product_title": "Workstation Laptop Pro",
+    "product_image": "https://www.getac.com/content/dam/uploads/2023/04/Getac_X600-Pro_03-5.png",
+    "category": "Computers",
+    "price": 1899.99,
+    "description": "Powerful workstation for heavy computing tasks.",
+    "Specification": ["Intel Xeon", "32GB RAM", "NVIDIA Quadro GPU"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "G020",
+    "product_title": "Gaming Desktop Tower X5",
+    "product_image": "https://pcexpress.com.bd/assets/backend/img/product/Value-Top-MANIA-X5-mini-Mid-Tower-Micro-ATX-Gaming-Casing-big-2024-12-20-676597d6d333c.webp",
+    "category": "Computers",
+    "price": 2099.99,
+    "description": "High-end gaming desktop with customizable RGB lighting.",
+    "Specification": ["Intel i9", "64GB RAM", "RTX 4080 GPU"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "G006",
+    "product_title": "Digital SLR Camera",
+    "product_image": "https://acmartbd.com/wp-content/uploads/2015/04/Nikon-d3200-slr-camera1.jpg",
+    "category": "Accessories",
+    "price": 699.99,
+    "description": "Entry-level DSLR with versatile features.",
+    "Specification": ["24MP", "Wi-Fi connectivity", "4K video recording"],
+    "availability": false,
+    "rating": 4.3
+  },
+  {
+    "product_id": "G007",
+    "product_title": "Gaming Console V",
+    "product_image": "https://www.amkette.com/cdn/shop/files/Artboard1_1.png?v=1734692001&width=360",
+    "category": "Accessories",
+    "price": 499.99,
+    "description": "Next-gen gaming console with 4K gaming support.",
+    "Specification": ["1TB storage", "VR-ready", "Wireless controllers"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "G008",
+    "product_title": "Smart Thermostat",
+    "product_image": "https://m.media-amazon.com/images/I/31lnJH23NXL._SL500_.jpg",
+    "category": "Smart Home",
+    "price": 129.99,
+    "description": "Energy-efficient thermostat with smart scheduling.",
+    "Specification": ["Wi-Fi", "Voice control", "Mobile app integration"],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": "G009",
+    "product_title": "Robot Vacuum Cleaner",
+    "product_image": "https://us.air-robo.com/cdn/shop/products/1_f49d2473-fb34-4d8b-beff-fc66b60209bf_800x.jpg?v=1737020371",
+    "category": "Smart Home",
+    "price": 249.99,
+    "description": "Automated vacuum cleaner with smart navigation.",
+    "Specification": ["Wi-Fi enabled", "App control", "HEPA filters"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "G010",
+    "product_title": "Smartwatch Series 6",
+    "product_image": "https://i.ibb.co.com/YbryS2j/apple-watch-series-6-32gb-red-aluminum-case-with-11633933444.webp",
+    "category": "Accessories",
+    "price": 399.99,
+    "description": "Advanced smartwatch with health tracking and GPS.",
+    "Specification": [
+      "Heart rate monitor",
+      "Sleep tracking",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.6
+  }
+]
