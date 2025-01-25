@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer bg-white p-10 flex flex-col justify-center items-center">
-      <div className="items-center flex flex-col">
+      <div className="items-center flex flex-col pb-4 border-b-2 lg:border-0">
         <Link to={"/"} className="font-bold text-3xl pb-3">Gadget Heaven</Link>
         <p className="font-medium text-[#09080F99]">Leading the way in cutting-edge technology and innovation.</p>
       </div>
-      <div className="grid grid-cols-3 gap-60 border-t-2 pt-12 ">
+      <div className=" flex flex-col md:flex-row items-center gap-20 lg:gap-80 lg:border-t-2 pt-12 ">
         <nav className="flex flex-col text-center space-y-2">
           <h6 className="font-bold text-lg">Services</h6>
           <a className="link link-hover text-[#09080F99]">Product Support</a>
