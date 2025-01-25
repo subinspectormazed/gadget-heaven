@@ -1,8 +1,53 @@
+import { useEffect, useState } from "react";
+import { ImEqualizer2 } from "react-icons/im";
+import { getCartList } from "../../utilities/utils";
+import Product from "../Product/Product";
 
 const Cart = () => {
+  const [products, setProducts] = useState([]);
+  const [cartItem, setCartItem] = useState([]);
+
+  useEffect(() => {
+    fetch("./products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  useEffect(() => {
+    const cartList = getCartList();
+
+    const addedCartList = products.filter((product) =>
+      cartList.includes(product.product_id)
+    );
+    setCartItem(addedCartList);
+  }, []);
+
   return (
-    <div>
-      <h1>Hello from cart</h1>
+    <div className="w-11/12 mx-auto pb-20">
+      <div className="flex justify-between items-center">
+        <div>
+          <h1 className="font-bold text-2xl">Cart</h1>
+        </div>
+
+        <div className="flex items-center">
+          <h2 className="font-bold text-2xl">Total Cost: </h2>
+          <div>
+            <button className="ml-4 px-6 rounded-[32px] btn btn-outline border-2 border-b-indigo-600 border-fuchsia-500 text-[#9538E2] font-semibold">
+              Sort By Price <ImEqualizer2 className="text-lg"></ImEqualizer2>
+            </button>
+            <button className="px-6 ml-3 rounded-[32px] btn bg-gradient-to-t to-[#9538E2] from-[#DD6BF0] text-white font-medium">
+              Purchase
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          {cartItem.map((product) => (
+            <Product key={product.product_id} product={product}></Product>
+          ))}
+        </h2>
+      </div>
     </div>
   );
 };

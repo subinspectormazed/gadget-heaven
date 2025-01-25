@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "category": "Accessories",
+    "slug": "accessories"
+  },
+  {
+    "id": 2,
+    "category": "Computers",
+    "slug": "computers"
+  },
+  {
+    "id": 3,
+    "category": "SmartHome",
+    "slug": "smartHome"
+  }
+]

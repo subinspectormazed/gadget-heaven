@@ -1,7 +1,7 @@
 
 const Banner = () => {
   return (
-    <div className="p-2 border rounded-lg md:mb-[250px]">
+    <div className="p-2 border rounded-lg">
       <div className="bg-[#9538E2] rounded-lg text-white text-center">
         <h1 className="font-bold md:text-[56px] pt-14 pb-6 w-8/12 mx-auto">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories
