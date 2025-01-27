@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 const AllProducts = () => {
   const products = useLoaderData();
+
   const { category } = useParams();
 
   const [filteredProducts, setFilteredProducts] = useState([]);

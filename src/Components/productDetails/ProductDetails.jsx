@@ -1,14 +1,18 @@
-import { useLoaderData, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { addToCartList, addToWishList } from "../../utilities/utils";
+import { toast } from "react-toastify";
+import { useState } from "react";
+toast
 
 const ProductDetails = () => {
   const products = useLoaderData();
-
   const { id } = useParams();
+  const [btnActive, setActiveBtn] = useState(true);
 
   const product = products.find((product) => product.product_id === id);
+
 
   const {
     product_image,
@@ -23,6 +27,7 @@ const ProductDetails = () => {
 
   const addToCart = (id) => {
     addToCartList(id);
+    toast.success('Successfully added to cart')
   };
 
   const addToWish = (id) => {
@@ -30,7 +35,7 @@ const ProductDetails = () => {
   };
   return (
     <div>
-      <div className="bg-[#9538E2] text-white text-center">
+      <div className="bg-[#9538E2] text-white text-center relative top-20">
         <div>
           <h2 className="font-bold text-3xl pt-8 pb-4">Product Details</h2>
           <p className="w-1/2 mx-auto pb-[235px]">
@@ -40,7 +45,7 @@ const ProductDetails = () => {
           </p>
         </div>
       </div>
-      <div className="card card-side bg-base-100 shadow-xl w-4/6 mx-auto relative -top-48 justify-center items-center flex">
+      <div className="card card-side bg-base-100 shadow-xl w-4/6 mx-auto relative -top-28 justify-center items-center flex">
         <figure>
           <img className="pl-4 w-96" src={product_image} alt="Movie" />
         </figure>

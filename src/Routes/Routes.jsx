@@ -5,7 +5,7 @@ import Root from "../Components/Root/Root";
 import Dashboard from "../Pages/Dashboard";
 import ProductDetails from "../Components/productDetails/ProductDetails";
 import AllProducts from "../Components/allProducts/AllProducts";
-
+import Wishlist from "../Components/WIshlist/Wishlist";
 
 const router = createBrowserRouter([
   {
@@ -16,24 +16,24 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: ()=> fetch('../categories.json'),
-        children:[
+        loader: () => fetch("../categories.json"),
+        children: [
           {
             path: "/",
             element: <AllProducts></AllProducts>,
-            loader: ()=> fetch('../products.json'),
+            loader: () => fetch("../products.json"),
           },
           {
             path: "/category/:category",
             element: <AllProducts></AllProducts>,
-            loader: ()=> fetch('../products.json'),
+            loader: () => fetch("../products.json"),
           },
-        ]
+        ],
       },
       {
         path: "products/:id",
         element: <ProductDetails></ProductDetails>,
-        loader: ()=> fetch('/products.json'),
+        loader: () => fetch("/products.json"),
       },
       {
         path: "/dashboard",
