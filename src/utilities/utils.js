@@ -1,5 +1,8 @@
+import { toast } from "react-toastify";
+
 const getCartList = () => {
   const cartListStr = localStorage.getItem("cart-item");
+
   if (cartListStr) {
     const cartList = JSON.parse(cartListStr);
     return cartList;
@@ -10,10 +13,18 @@ const getCartList = () => {
 
 const addToCartList = (id) => {
   const cartList = getCartList();
+  if (cartList.includes(id)) {
 
-  cartList.push(id);
-  const cartListStr = JSON.stringify(cartList);
-  localStorage.setItem("cart-item", cartListStr);
+  } else {
+    cartList.push(id);
+    const cartListStr = JSON.stringify(cartList);
+    localStorage.setItem("cart-item", cartListStr);
+  }
+};
+
+const removeFromCart = (id) => {
+  const cartList = getWishList();
+  localStorage.removeItem(id);
 };
 
 const getWishList = () => {
@@ -29,11 +40,13 @@ const getWishList = () => {
 const addToWishList = (id) => {
   const wishList = getWishList();
   if (wishList.includes(id)) {
+    toast.warn("Product already exists");
   } else {
     wishList.push(id);
     const wishListStr = JSON.stringify(wishList);
     localStorage.setItem("wish-list", wishListStr);
+    toast.success("Successfully added to cart");
   }
 };
 
-export { addToCartList, addToWishList, getCartList, getWishList };
+export { addToCartList, addToWishList, getCartList, getWishList, removeFromCart };

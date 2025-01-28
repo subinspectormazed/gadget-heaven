@@ -4,6 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { addToCartList, addToWishList } from "../../utilities/utils";
 import { toast } from "react-toastify";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 toast
 
 const ProductDetails = () => {
@@ -33,8 +34,12 @@ const ProductDetails = () => {
   const addToWish = (id) => {
     addToWishList(id);
   };
+
   return (
     <div>
+      <Helmet>
+        <title>{product_id} | Gadget Heaven</title>
+      </Helmet>
       <div className="bg-[#9538E2] text-white text-center relative top-20">
         <div>
           <h2 className="font-bold text-3xl pt-8 pb-4">Product Details</h2>

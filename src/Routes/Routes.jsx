@@ -5,7 +5,7 @@ import Root from "../Components/Root/Root";
 import Dashboard from "../Pages/Dashboard";
 import ProductDetails from "../Components/productDetails/ProductDetails";
 import AllProducts from "../Components/allProducts/AllProducts";
-import Wishlist from "../Components/WIshlist/Wishlist";
+
 
 const router = createBrowserRouter([
   {

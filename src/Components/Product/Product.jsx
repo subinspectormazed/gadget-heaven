@@ -13,9 +13,9 @@ const Product = ({ product }) => {
     description,
   } = product;
 
-  // const handleRemove=(id)=>{
-  //   removeFromCart(id);
-  // }
+  const handleRemove=(id)=>{
+    removeFromCart(id);
+  }
 
   const handleDetails = (id) => {
     navigate(`/products/${id}`);
@@ -37,7 +37,7 @@ const Product = ({ product }) => {
             <p className="text-lg text-[#09080F99] py-4">{description}</p>
             <p>Price: {price}$</p>
           </div>
-          <button className="pr-10">Delete</button>
+          <button onClick={()=>handleRemove(id)} className="pr-10">Delete</button>
         </div>
       ) : (
         <div>

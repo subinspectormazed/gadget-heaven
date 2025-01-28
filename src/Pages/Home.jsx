@@ -1,11 +1,15 @@
 import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "../Banner/Banner";
 import Categories from "../Components/Categories/Categories";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const categories = useLoaderData();
   return (
     <div>
+      <Helmet>
+        <title>Home | Gadget Heaven</title>
+      </Helmet>
       <Banner></Banner>
       <div className="w-11/12 mx-auto md:relative md:-top-[120px]">
         <h1 className="font-bold text-[40px] text-center ">

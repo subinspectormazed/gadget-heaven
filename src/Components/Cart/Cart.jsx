@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ImEqualizer2 } from "react-icons/im";
 import { getCartList } from "../../utilities/utils";
 import Product from "../Product/Product";
+import { Helmet } from "react-helmet";
 
 const Cart = () => {
   const [products, setProducts] = useState([]);
@@ -38,6 +39,9 @@ const Cart = () => {
 
   return (
     <div className="w-11/12 mx-auto pb-20">
+      <Helmet>
+        <title>Cart | Gadget Heaven</title>
+      </Helmet>
       <div className="flex justify-between items-center">
         <div>
           <h1 className="font-bold text-2xl">Cart</h1>
