@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { removeFromWishList } from "../../utilities/utils";
 // import { removeFromCart } from "../../utilities/utils";
 
 const Product = ({ product }) => {
@@ -14,7 +15,7 @@ const Product = ({ product }) => {
   } = product;
 
   const handleRemove=(id)=>{
-    removeFromCart(id);
+    removeFromWishList(id);
   }
 
   const handleDetails = (id) => {

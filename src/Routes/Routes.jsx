@@ -6,7 +6,6 @@ import Dashboard from "../Pages/Dashboard";
 import ProductDetails from "../Components/productDetails/ProductDetails";
 import AllProducts from "../Components/allProducts/AllProducts";
 
-
 const router = createBrowserRouter([
   {
     path: "/",

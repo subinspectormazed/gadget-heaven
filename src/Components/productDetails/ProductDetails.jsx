@@ -1,19 +1,27 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
-import { addToCartList, addToWishList } from "../../utilities/utils";
+import {
+  addToCartList,
+  addToWishList,
+  getWishList,
+} from "../../utilities/utils";
 import { toast } from "react-toastify";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-toast
 
 const ProductDetails = () => {
   const products = useLoaderData();
   const { id } = useParams();
-  const [btnActive, setActiveBtn] = useState(true);
+  const [isAdded, setIsAdded] = useState(false);
 
+  useEffect(() => {
+    const wishList = getWishList();
+    if (wishList.includes(id)) {
+      setIsAdded(true);
+    }
+  }, []);
   const product = products.find((product) => product.product_id === id);
-
 
   const {
     product_image,
@@ -28,11 +36,12 @@ const ProductDetails = () => {
 
   const addToCart = (id) => {
     addToCartList(id);
-    toast.success('Successfully added to cart')
+    toast.success("Successfully added to cart");
   };
 
   const addToWish = (id) => {
     addToWishList(id);
+    setIsAdded(true);
   };
 
   return (
@@ -126,6 +135,7 @@ const ProductDetails = () => {
               Add To Cart <IoCartOutline className="text-3xl"></IoCartOutline>
             </button>
             <button
+              disabled={isAdded}
               onClick={() => addToWish(product_id)}
               className="rounded-full text-[#9538E2] border-2 border-[#9538E2] btn text-xl hover:bg-[#9538E2] hover:text-white"
             >

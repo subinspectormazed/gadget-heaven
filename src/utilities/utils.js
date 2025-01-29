@@ -14,7 +14,6 @@ const getCartList = () => {
 const addToCartList = (id) => {
   const cartList = getCartList();
   if (cartList.includes(id)) {
-
   } else {
     cartList.push(id);
     const cartListStr = JSON.stringify(cartList);
@@ -22,10 +21,6 @@ const addToCartList = (id) => {
   }
 };
 
-const removeFromCart = (id) => {
-  const cartList = getWishList();
-  localStorage.removeItem(id);
-};
 
 const getWishList = () => {
   const wishListStr = localStorage.getItem("wish-list");
@@ -40,13 +35,26 @@ const getWishList = () => {
 const addToWishList = (id) => {
   const wishList = getWishList();
   if (wishList.includes(id)) {
-    toast.warn("Product already exists");
   } else {
     wishList.push(id);
     const wishListStr = JSON.stringify(wishList);
     localStorage.setItem("wish-list", wishListStr);
-    toast.success("Successfully added to cart");
+    toast.success("Added to wishlist");
   }
 };
 
-export { addToCartList, addToWishList, getCartList, getWishList, removeFromCart };
+const removeFromWishList = (id) => {
+  const wishList = getWishList();
+  const remaining = wishList.filter(id=>id.id!=id)
+  const wishListStr = JSON.stringify(remaining);
+    localStorage.setItem("wish-list", wishListStr);
+    toast.success("Removed from wishlist");
+};
+
+export {
+  addToCartList,
+  addToWishList,
+  getCartList,
+  getWishList,
+  removeFromWishList,
+};
