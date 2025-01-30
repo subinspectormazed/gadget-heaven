@@ -43,18 +43,17 @@ const addToWishList = (id) => {
   }
 };
 
-const removeFromWishList = (id) => {
-  const wishList = getWishList();
-  const remaining = wishList.filter(id=>id.id!=id)
-  const wishListStr = JSON.stringify(remaining);
-    localStorage.setItem("wish-list", wishListStr);
-    toast.success("Removed from wishlist");
-};
+// const removeFromWishList = (id) => {
+//   const wishList = getWishList();
+//   const remaining = wishList.filter(id=>id.id!=id)
+//   const wishListStr = JSON.stringify(remaining);
+//     localStorage.setItem("wish-list", wishListStr);
+//     toast.success("Removed from wishlist");
+// };
 
 export {
   addToCartList,
   addToWishList,
   getCartList,
   getWishList,
-  removeFromWishList,
 };

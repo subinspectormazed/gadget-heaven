@@ -3,8 +3,11 @@ import Home from "../Pages/Home";
 import ErrorPage from "../Pages/ErrorPage";
 import Root from "../Components/Root/Root";
 import Dashboard from "../Pages/Dashboard";
-import ProductDetails from "../Components/productDetails/ProductDetails";
+import UpcomingProductDetails from "../Components/upcomingProductDetails/UpcomingProductDetails";
 import AllProducts from "../Components/allProducts/AllProducts";
+import Statistics from "../Pages/Statistics";
+import UpComingProducts from "../Pages/UpComingProducts";
+import ProductDetails from "../Components/productDetails/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -30,7 +33,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "products/:id",
+        path: "product-details/:id",
         element: <ProductDetails></ProductDetails>,
         loader: () => fetch("/products.json"),
       },
@@ -39,8 +42,18 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>,
       },
       {
-        path: "/home",
-        element: <Home></Home>,
+        path: "/statistics",
+        element: <Statistics></Statistics>,
+      },
+      {
+        path: "upcoming-products",
+        element: <UpComingProducts></UpComingProducts>,
+        loader:()=>fetch('/upcoming.json'),
+      },
+      {
+        path: "upcoming-details/:id",
+        element: <UpcomingProductDetails></UpcomingProductDetails>,
+        loader:()=>fetch('/upcoming.json'),
       },
     ],
   },

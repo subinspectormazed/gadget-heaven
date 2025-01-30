@@ -17,7 +17,14 @@ const Navbar = () => {
         <NavLink to={"/dashboard"}>Dashboard</NavLink>
       </li>
       <li>
-        <NavLink to={"/nn"}>New Tab</NavLink>
+        <NavLink
+          className={`${
+            location.pathname === "/" ? "text-[#00FFFF]" : "text-[#FF1493]"
+          } font-bold`}
+          to={"/upcoming-products"}
+        >
+          Upcoming
+        </NavLink>
       </li>
     </>
   );
@@ -26,7 +33,7 @@ const Navbar = () => {
       className={`${
         location.pathname === "/"
           ? "bg-[#9538E2] text-white w-full rounded-t-lg backdrop-blur-xl border-x-[9px] z-50 fixed"
-          : "bg-white/30 w-full backdrop-blur-xl z-50 fixed"
+          : "bg-white/30 w-full backdrop-blur-xl z-50 fixed text-[#9538E2]"
       } `}
     >
       <div className="navbar w-11/12 mx-auto">

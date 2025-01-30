@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { removeFromWishList } from "../../utilities/utils";
+// import { removeFromWishList } from "../../utilities/utils";
 // import { removeFromCart } from "../../utilities/utils";
 
 const Product = ({ product }) => {
@@ -14,12 +14,16 @@ const Product = ({ product }) => {
     description,
   } = product;
 
-  const handleRemove=(id)=>{
-    removeFromWishList(id);
-  }
+  // const handleRemove=(id)=>{
+  //   removeFromWishList(id);
+  // }
 
   const handleDetails = (id) => {
-    navigate(`/products/${id}`);
+    if (location.pathname === "/") {
+      navigate(`/product-details/${id}`);
+    } else {
+      navigate(`/upcoming-details/${id}`);
+    }
   };
 
   return (
@@ -38,7 +42,7 @@ const Product = ({ product }) => {
             <p className="text-lg text-[#09080F99] py-4">{description}</p>
             <p>Price: {price}$</p>
           </div>
-          <button onClick={()=>handleRemove(id)} className="pr-10">Delete</button>
+          <button className="pr-10">Delete</button>
         </div>
       ) : (
         <div>
@@ -51,8 +55,14 @@ const Product = ({ product }) => {
           </figure>
           <div className="card-body">
             <h2 className="card-title">{product_title}</h2>
-            <p>Price: {price}$</p>
-            <div className="card-actions">
+            <p>
+              {location.pathname === "/" ? (
+                <p>Price: {price}$</p>
+              ) : (
+                <p className="text-[#9538E2]"><span className="text-black">Price:</span> {price}</p>
+              )}
+            </p>
+            <div className="card-actions items-end">
               <button
                 onClick={() => handleDetails(id)}
                 className="mt-4 px-6 rounded-[32px] btn btn-outline border-2 text-[#9538E2] border-b-indigo-600 border-fuchsia-500"

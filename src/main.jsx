@@ -9,7 +9,7 @@ import { HelmetProvider } from "react-helmet-async";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HelmetProvider>
-      <ToastContainer position="top-center" autoClose={2000} />
+      <ToastContainer position="top-center" autoClose={1000} />
       <RouterProvider router={router} />
     </HelmetProvider>
   </StrictMode>

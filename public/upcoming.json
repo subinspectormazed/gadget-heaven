@@ -1,0 +1,82 @@
+[
+  {
+    "product_id": "M001",
+    "product_title": "Samsung Galaxy S24 Ultra",
+    "product_image": "https://i.ibb.co.com/PsTFVcg6/Galaxy-S24-Ultra-Titanium-Gray-8816.jpg",
+    "category": "Smartphones",
+    "price": "To be Announced",
+    "description": "Flagship smartphone with a 200MP camera, Snapdragon 8 Gen 3, and S-Pen.",
+    "Specification": [
+      "6.8-inch Dynamic AMOLED 2X",
+      "Snapdragon 8 Gen 3",
+      "200MP Quad Camera",
+      "5000mAh Battery"
+    ],
+    "availability": "Upcoming",
+    "rating": 4.9
+  },
+  {
+    "product_id": "M002",
+    "product_title": "iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/8nQW9BXq/i-Phone-15-Plus-2-5-1544.jpg",
+    "category": "Smartphones",
+    "price": "To be Announced",
+    "description": "Apple's most advanced iPhone with a titanium frame and A17 Pro chip.",
+    "Specification": [
+      "6.7-inch Super Retina XDR",
+      "A17 Pro Chip",
+      "48MP Triple Camera",
+      "Action Button"
+    ],
+    "availability": "Upcoming",
+    "rating": 4.8
+  },
+  {
+    "product_id": "S001",
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://i.ibb.co.com/Y4vHKJ06/Apple-Watch-Series-9-3-6716.jpg",
+    "category": "Smartwatches",
+    "price": "To be Announced",
+    "description": "Smartwatch with Always-On Retina Display and advanced health tracking.",
+    "Specification": [
+      "S9 Chip",
+      "Blood Oxygen Sensor",
+      "ECG Monitoring",
+      "Crash Detection"
+    ],
+    "availability": "Upcoming",
+    "rating": 4.7
+  },
+  {
+    "product_id": "S002",
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://i.ibb.co.com/4wFcc8v1/Galaxy-Watch6-Graphite-6125.jpg",
+    "category": "Smartwatches",
+    "price": "To be Announced",
+    "description": "Premium smartwatch with BioActive Sensor and sleep tracking.",
+    "Specification": [
+      "1.5-inch Super AMOLED",
+      "BioActive Sensor",
+      "Samsung Pay",
+      "Water Resistant (IP68)"
+    ],
+    "availability": "Upcoming",
+    "rating": 4.6
+  },
+  {
+    "product_id": "T001",
+    "product_title": "Samsung Galaxy Tab S9 Ultra",
+    "product_image": "https://i.ibb.co.com/hFHJh4Jr/Galaxy-Tab-S9-Ultra-Graphite-3083.jpg",
+    "category": "Tablets",
+    "price": "To be Announced",
+    "description": "High-end tablet with a 14.6-inch Dynamic AMOLED 2X display and S-Pen.",
+    "Specification": [
+      "14.6-inch Dynamic AMOLED 2X",
+      "Snapdragon 8 Gen 3",
+      "S-Pen Support",
+      "11200mAh Battery"
+    ],
+    "availability": "Upcoming",
+    "rating": 4.8
+  }
+]

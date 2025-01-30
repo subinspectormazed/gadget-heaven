@@ -12,7 +12,7 @@ const Home = () => {
       </Helmet>
       <Banner></Banner>
       <div className="w-11/12 mx-auto md:relative md:-top-[120px]">
-        <h1 className="font-bold text-[40px] text-center ">
+        <h1 className="font-bold text-[40px] text-center text-[#9538E2] py-9">
           Explore Cutting-Edge Gadgets
         </h1>
         <div className="md:flex gap-6 mt-12 justify-evenly">
