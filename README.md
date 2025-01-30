@@ -1,8 +1,12 @@
-# React + Vite
+Live Link: https://fumbling-cable.surge.sh/dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React fundamental concepts used: React Hooks, React Router, Loader, React Helmet, React Toaster, NavLink, Link
 
-Currently, two official plugins are available:
+Used Local storage to manage and handling data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+5 features of my website:
+      (1) Category wise product view
+      (2) Show total cost in cart page for adding products in cart also can sort items by price.
+      (3) Wishlist button disabled after adding products to wishlist.
+      (4) Use can see product details for all products including upcoming products.
+      (5) Handled 404/ error page

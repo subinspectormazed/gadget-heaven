@@ -19,10 +19,10 @@ const Product = ({ product }) => {
   // }
 
   const handleDetails = (id) => {
-    if (location.pathname === "/") {
-      navigate(`/product-details/${id}`);
-    } else {
+    if (location.pathname === "/upcoming-products") {
       navigate(`/upcoming-details/${id}`);
+    } else {
+      navigate(`/product-details/${id}`);
     }
   };
 
